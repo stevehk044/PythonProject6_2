@@ -1,14 +1,18 @@
-# Create a function to reverse a string
-def reverse_string(string):
-    # Base case: if the string is empty or it has one character
-    if len(string) <= 1:
-        return string
-
-    # Recursive case: Reverse and append
+# create a function for calculating Fibonacci
+def fibonacci(n):
+    # base case
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    # Recursive case
     else:
-         return reverse_string(string[1:]) + string[0]
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-    print(reverse_string("hello"))
-    
+    print(fibonacci(0))
+    print(fibonacci(1))
+    print(fibonacci(10))
+
+
 
